@@ -23,4 +23,9 @@ ctx.fillStyle = "red";
               if(a===0) { go = 1;
    a=1;}
         });
+window.addEventListener('touchstart', function (e) {
+              if(a===0) { go = 1;
+   a=1;}
+        });
+
 setInterval(function(){clear();char();},10);
