@@ -21,7 +21,7 @@ ctx.fillStyle = "red";
   }
   for (var i=0; i<20; i++) {
   ctx.fillStyle = "gray";
-  canvasJS.rectangle(x%500+i*100,350,50,50);
+  canvasJS.rectangle(500%x+i*100,350,50,50);
   }
   x--;
 }
