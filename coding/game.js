@@ -17,8 +17,8 @@ ctx.fillStyle = "red";
     a = 0;
   }
 }
- window.addEventListener('touchstart', function (e) {
-          if(a===0) { yv=-20;
+        window.addEventListener('touchmove', function (e) {
+              if(a===0) { yv=-20;
    a=1;}
-        })
+        });
 setInterval(function(){clear();char();},10);
