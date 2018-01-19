@@ -26,7 +26,7 @@ ctx.fillStyle = "red";
   ctx.fillStyle = "gray";
   canvasJS.rectangle(i,400,50,50);
     if (i<100 && i>50) {
-      if (y < 350) {
+      if (y > 350) {
         alert("game over");
       }
     }
