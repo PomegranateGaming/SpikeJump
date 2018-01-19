@@ -3,7 +3,7 @@ ctx.fillStyle = "white";
 canvasJS.rectangle(0,0,500,500);
 }
 var y = 250;
-var x;
+var x = 0;
 yv = 0;
 var a = 0;
 var go = 0;
@@ -23,6 +23,7 @@ ctx.fillStyle = "red";
   ctx.fillStyle = "gray";
   canvasJS.rectangle(x%500+i*100,350,50,50);
   }
+  x--;
 }
         window.addEventListener('keydown', function (e) {
               if(a===0) { go = 1;
