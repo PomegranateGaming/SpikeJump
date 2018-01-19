@@ -19,9 +19,9 @@ ctx.fillStyle = "red";
     yv=0;} else {yv=-20;y-=20;go=0}
     a = 0;
   }
-  for (var i=0; i<20; i++) {
+  for (var i=x; i<500+x; i+=100) {
   ctx.fillStyle = "gray";
-  canvasJS.rectangle(500%x+i*100,350,50,50);
+  canvasJS.rectangle(i,400,50,50);
   }
   x--;
 }
