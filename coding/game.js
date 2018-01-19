@@ -9,7 +9,7 @@ var a = 0;
 var go = 0;
 function char() {
   if (x===0) {
-   x=500; 
+   x=600; 
   }
 ctx.fillStyle = "red";
   canvasJS.rectangle(50,y,50,50);
@@ -22,7 +22,7 @@ ctx.fillStyle = "red";
     yv=0;} else {yv=-20;y-=20;go=0}
     a = 0;
   }
-  for (var i=x-500; i<x+500; i+=300) {
+  for (var i=x-600; i<x+600; i+=300) {
   ctx.fillStyle = "gray";
   canvasJS.rectangle(i,400,50,50);
   }
