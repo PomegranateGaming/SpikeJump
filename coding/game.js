@@ -3,11 +3,13 @@ ctx.fillStyle = "white";
 canvasJS.rectangle(0,0,500,500);
 }
 var y = 250;
+var mode = 1;
 var x = 0;
 yv = 0;
 var a = 0;
 var go = 0;
 function char() {
+  if (mode===1) {
   if (x===0) {
    x=600; 
   }
@@ -27,12 +29,13 @@ ctx.fillStyle = "red";
   canvasJS.rectangle(i,400,50,50);
     if (i<100 && i>0) {
       if (y > 380) {
-        alert(y);
+        mode = 0;
         
       }
     }
   }
   x-=4;
+  }
 }
         window.addEventListener('keydown', function (e) {
               if(a===0) { go = 1;
