@@ -22,7 +22,7 @@ ctx.fillStyle = "red";
     yv=0;} else {yv=-20;y-=20;go=0}
     a = 0;
   }
-  for (var i=x-500; i<x+500; i+=100) {
+  for (var i=x-500; i<x+500; i+=300) {
   ctx.fillStyle = "gray";
   canvasJS.rectangle(i,400,50,50);
   }
