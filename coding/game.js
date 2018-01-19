@@ -15,5 +15,7 @@ ctx.fillStyle = "red";
     yv=0;
   }
 }
-c.onclick = "yv='-20'";
+c.addEventListener("click", function(){
+    yv=-20;
+});
 setInterval(function(){clear();char();},10);
