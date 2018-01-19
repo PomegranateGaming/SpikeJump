@@ -12,3 +12,4 @@ ctx.fillStyle = "red";
   y=400;
   }
 }
+setInterval(function(){clear();char();},10);
