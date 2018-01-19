@@ -17,7 +17,7 @@ ctx.fillStyle = "red";
     a = 0;
   }
 }
-        window.addEventListener('touchmove', function (e) {
+        window.addEventListener('onkeydown', function (e) {
               if(a===0) { yv=-20;
    a=1;}
         });
