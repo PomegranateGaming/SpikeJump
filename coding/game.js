@@ -26,7 +26,7 @@ ctx.fillStyle = "red";
   ctx.fillStyle = "gray";
   canvasJS.rectangle(i,400,50,50);
   }
-  x--;
+  x-=10;
 }
         window.addEventListener('keydown', function (e) {
               if(a===0) { go = 1;
