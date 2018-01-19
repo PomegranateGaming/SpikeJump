@@ -23,7 +23,11 @@ ctx.fillStyle = "red";
               if(a===0) { go = 1;
    a=1;}
         });
-window.addEventListener('touchstart', function (e) {
+window.addEventListener('touchstart', function () {
+              if(a===0) { go = 1;
+   a=1;}
+        });
+window.addEventListener('click', function () {
               if(a===0) { go = 1;
    a=1;}
         });
