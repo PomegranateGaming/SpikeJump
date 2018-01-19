@@ -28,7 +28,7 @@ ctx.fillStyle = "red";
     if (i<100 && i>0) {
       if (y > 350) {
         console.log(y);
-        alert("game over");
+        
       }
     }
   }
