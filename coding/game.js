@@ -54,17 +54,25 @@ var touch = 0;
               if(a===0) { go = 1;
    a=1;}
         });
-window.addEventListener('touchstart', function () {
-              if(a===0) { touch = 1;
-   a=1;}
+window.addEventListener('touchstart', function (e) {
+             if(mode===1) { if(a===0) { touch = 1;
+   a=1;}} else {
+     if(e.touches[0].screenY>350 && e.touches[0].screenY<450 && e.touches[0].screenX>50 && e.touches[0].screenX<450) {
+   mode=1;
+        }
+   }
         });
 window.addEventListener('touchend', function () {
-              if(touch===1) { go = 1; touch=0;
+             if(touch===1) { go = 1; touch=0;
    a=1;}
         });
 window.addEventListener('click', function () {
-              if(a===0) { go = 1;
-   a=1;}
+              if(mode===1) {if(a===0) { go = 1;
+   a=1;}} else {
+     if(e.pageY>350 && e.pageY<450 && e.pageX>50 && e.pageX<450) {
+   mode=1;
+        }
+   }
         });
 
 setInterval(function(){clear();char();},10);
