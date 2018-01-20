@@ -5,7 +5,7 @@ canvasJS.rectangle(0,0,500,500);
   canvasJS.rectangle(0,450,500,50);
 }
 var y = 250;
-var mode = 1;
+var mode = 0;
 var x = 0;
 yv = 0;
 var a = 0;
@@ -58,7 +58,12 @@ window.addEventListener('touchstart', function (e) {
              if(mode===1) { if(a===0) { touch = 1;
    a=1;}} else {
      if(e.touches[0].screenY>350 && e.touches[0].screenY<450 && e.touches[0].screenX>50 && e.touches[0].screenX<450) {
-   mode=1;
+  y = 250;
+mode = 1;
+x = 0;
+yv = 0;
+a = 0;
+go = 0;
         }
    }
         });
@@ -70,7 +75,12 @@ window.addEventListener('click', function (e) {
               if(mode===1) {if(a===0) { go = 1;
    a=1;}} else {
      if(e.pageY>350 && e.pageY<450 && e.pageX>50 && e.pageX<450) {
-   mode=1;
+   y = 250;
+mode = 1;
+x = 0;
+yv = 0;
+a = 0;
+go = 0;
         }
    }
         });
