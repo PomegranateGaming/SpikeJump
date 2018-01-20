@@ -1,6 +1,7 @@
 function clear() {
-ctx.fillStyle = "white";
+ctx.fillStyle = "aqua";
 canvasJS.rectangle(0,0,500,500);
+  canvasJS.rectangle(0,450,500,50);
 }
 var y = 250;
 var mode = 1;
