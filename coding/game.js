@@ -46,7 +46,7 @@ ctx.fillStyle = "red";
   canvasJS.text.fill("30px Comic Sans MS","By Pomegranate Gaming",250,250);
     canvasJS.text.fill("20px Comic Sans MS","Click/Drag(mobile)/Press a button to play.",250,300);
     ctx.fillStyle = "darkblue";
-    canvasJS.rectangle(50,350,450,100);
+    canvasJS.rectangle(50,350,400,100);
   }
 }
 var touch = 0;
