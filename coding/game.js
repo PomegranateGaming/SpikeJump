@@ -17,7 +17,7 @@ function char() {
   }
 ctx.fillStyle = "red";
   canvasJS.rectangle(50,y,50,50);
-  if (y < 400) {
+  if (y < 401) {
     yv++;
     y+=yv;
   } else {
