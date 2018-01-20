@@ -52,22 +52,7 @@ ctx.fillStyle = "red";
   }
 }
 var touch = 0;
-        window.addEventListener('keydown', function (e) {
-              if(a===0) {go = 1;
-   a=1;}
-        });
-window.addEventListener('touchstart', function () {
-              if(a===0) { touch = 1;
-   a=1;}
-        });
-window.addEventListener('touchend', function () {
-             if(touch===1) {go = 1; a = 1; touch=0;
-   }
-        });
-window.addEventListener('click', function () {
-              if(a===0) {go = 1; a = 1;
-  }
-        });
+        
 window.addEventListener('click', function (e) {
               if(mode===1) {} else {
      if(e.pageY>350 && e.pageY<450 && e.pageX>50 && e.pageX<450) {
@@ -92,5 +77,21 @@ go = 0;
         }
    }
         });
-
+window.addEventListener('keydown', function (e) {
+              if(a===0) {go = 1;
+   a=1;}
+        });
+window.addEventListener('touchstart', function () {
+              if(a===0) { touch = 1;
+   a=1;}
+        });
+window.addEventListener('touchend', function () {
+             if(touch===1) {go = 1; a = 1; touch=0;
+   }
+        });
+window.addEventListener('click', function () {
+              if(a===0) {go = 1; a = 1;
+  }
+        });
 setInterval(function(){clear();char();},10);
+
