@@ -33,6 +33,7 @@ ctx.fillStyle = "red";
   canvasJS.rectangle(i,400,50,50);
     if (i<100 && i>0) {
       if (y > 380) {
+        a = 0;
         mode = 0;
         
       }
@@ -71,11 +72,11 @@ go = 0;
         });
 window.addEventListener('touchend', function () {
              if(touch===1) {go = 1; touch=0;
-   a=1;}
+   }
         });
 window.addEventListener('click', function (e) {
               if(mode===1) {if(a===0) {go = 1;
-   a=1;}} else {
+  }} else {
      if(e.pageY>350 && e.pageY<450 && e.pageX>50 && e.pageX<450) {
    y = 250;
 mode = 1;
