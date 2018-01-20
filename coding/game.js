@@ -17,14 +17,15 @@ function char() {
   }
 ctx.fillStyle = "red";
   canvasJS.rectangle(50,y,50,50);
-  if (y < 401) {
+  if (y < 400) {
     yv++;
     y+=yv;
   } else {
+    a = 0;
   y=400;
     if (go === 0) {
     yv=0;} else {yv=-20;y-=20;go=0}
-    a = 0;
+    
   }
   for (var i=x-600; i<x+600; i+=300) {
   ctx.fillStyle = "gray";
@@ -51,7 +52,7 @@ ctx.fillStyle = "red";
 }
 var touch = 0;
         window.addEventListener('keydown', function (e) {
-              if(a===0) {y=401; go = 1;
+              if(a===0) {go = 1;
    a=1;}
         });
 window.addEventListener('touchstart', function (e) {
@@ -68,11 +69,11 @@ go = 0;
    }
         });
 window.addEventListener('touchend', function () {
-             if(touch===1) {y=401; go = 1; touch=0;
+             if(touch===1) {go = 1; touch=0;
    a=1;}
         });
 window.addEventListener('click', function (e) {
-              if(mode===1) {if(a===0) {y=401; go = 1;
+              if(mode===1) {if(a===0) {go = 1;
    a=1;}} else {
      if(e.pageY>350 && e.pageY<450 && e.pageX>50 && e.pageX<450) {
    y = 250;
