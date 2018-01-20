@@ -1,4 +1,4 @@
 We need this:
-Game engine
-Canvas engine/WebGL engine
+Start screen
+Images in /design
 Design integration
