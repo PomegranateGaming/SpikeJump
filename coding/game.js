@@ -57,16 +57,17 @@ var touch = 0;
    a=1;}
         });
 window.addEventListener('touchstart', function () {
-              if(a===0) { touch = 1;
+              if(a===0) {touch = 1;
    a=1;}
         });
 window.addEventListener('touchend', function () {
-             if(touch===1) {go = 1; a = 1; touch=0;
-   }
+             if(touch===1) {go = 1;
+                            a = 1;
+                            touch=0; }
         });
 window.addEventListener('click', function () {
-              if(a===0) {go = 1; a = 1;
-  }
+              if(a===0) {go = 1;
+                         a = 1; }
         });
 window.addEventListener('click', function (e) {
               if(mode===1) {} else {
