@@ -44,7 +44,9 @@ ctx.fillStyle = "red";
     ctx.textAlign = "center";
   canvasJS.text.fill("50px Comic Sans MS","SpikeJump",250,210);
   canvasJS.text.fill("30px Comic Sans MS","By Pomegranate Gaming",250,250);
-    canvasJS.text.fill("20px Comic Sans MS","Click/Drag(mobile)/Press a button to start/play.",250,300);
+    canvasJS.text.fill("20px Comic Sans MS","Click/Drag(mobile)/Press a button to play.",250,300);
+    ctx.fillStyle = "darkblue";
+    canvasJS.rectangle(50,350,450,100);
   }
 }
 var touch = 0;
