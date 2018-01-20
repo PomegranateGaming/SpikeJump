@@ -25,7 +25,7 @@ ctx.fillStyle = "red";
     a = 0;
   y=400;
     if (go === 0) {
-    yv=0;} else {yv=-20;y-=20;go=0}
+    yv=0;} else {yv=-20;y-=20;go=0;}
     
   }
   for (var i=x-600; i<x+600; i+=300) {
