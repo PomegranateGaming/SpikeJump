@@ -37,11 +37,14 @@ ctx.fillStyle = "red";
     }
   }
   x-=4;
-  }
+  } else {
   ctx.fillStyle = "blue";
   canvasJS.rectangle(0,0,500,500);
   ctx.fillStyle = "orange";
-  canvasJS.text.fill("30px Comic Sans MS","SpikeJump",150,150);
+  canvasJS.text.fill("50px Comic Sans MS","SpikeJump",250,150);
+  canvasJS.text.fill("30px Comic Sans MS","By Pomegranate Gaming",250,250);
+    canvasJS.text.fill("50px Comic Sans MS","Click/Drag(mobile)/Press a button to start/play.",250,300);
+  }
 }
 var touch = 0;
         window.addEventListener('keydown', function (e) {
