@@ -38,6 +38,10 @@ ctx.fillStyle = "red";
   }
   x-=4;
   }
+  ctx.fillStyle = "blue";
+  canvasJS.rectangle(0,0,500,500);
+  ctx.fillStyle = "orange";
+  canvasJS.text.fill("30px Comic Sans MS","SpikeJump",150,150);
 }
 var touch = 0;
         window.addEventListener('keydown', function (e) {
