@@ -26,7 +26,7 @@ ctx.fillStyle = "red";
     a = 0;
   y=400;
     if (go === 0) {
-    yv=0;} else {yv=-20;y-=20;go=0;}
+    yv=0;} else {lol=false;yv=-20;y-=20;go=0;}
     
   }
                   if (lol) {if (y===400) {go = 1;
