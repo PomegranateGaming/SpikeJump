@@ -53,24 +53,24 @@ ctx.fillStyle = "red";
 }
 var touch = 0;
         window.addEventListener('keydown', function (e) {
-              if(y===400) {go = 1;
+              if (y===400) {go = 1;
    a=1;}
         });
 window.addEventListener('touchstart', function () {
-              if(y===400) {touch = 1;
+              if (y===400) {touch = 1;
    a=1;}
         });
 window.addEventListener('touchend', function () {
-             if(touch===1) {go = 1;
+             if (touch===1) {go = 1;
                             a = 1;
                             touch=0; }
         });
 window.addEventListener('click', function () {
-              if(y===400) {go = 1;
+              if (y===400) {go = 1;
                          a = 1; }
         });
 window.addEventListener('click', function (e) {
-              if(mode===1) {} else {
+              if (mode===1) {} else {
      if(e.pageY>350 && e.pageY<450 && e.pageX>50 && e.pageX<450) {
    y = 250;
 mode = 1;
@@ -82,7 +82,7 @@ go = 0;
    }
         });
 window.addEventListener('touchstart', function (e) {
-              if(mode===1) {} else {
+              if (mode===1) {} else {
      if(e.pageY>350 && e.pageY<450 && e.pageX>50 && e.pageX<450) {
    y = 250;
 mode = 1;
