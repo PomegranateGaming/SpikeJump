@@ -22,7 +22,7 @@ ctx.fillStyle = "red";
     yv++;
     y+=yv;
   } else {
-    //a = 0;
+    a = 0;
   y=400;
     if (go === 0) {
     yv=0;} else {yv=-20;y-=20;go=0;}
