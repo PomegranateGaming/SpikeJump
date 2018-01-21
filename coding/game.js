@@ -74,7 +74,7 @@ var touch = 0;
 window.addEventListener('touchstart', function () {
              if (y===400) {touch = 1;
    }
-  lol=true;
+
         });
 window.addEventListener('touchend', function () {
          if (touch===1) {go = 1;
