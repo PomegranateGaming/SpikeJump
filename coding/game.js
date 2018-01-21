@@ -46,6 +46,11 @@ ctx.fillStyle = "red";
     }
   }
   x-=4;
+    if (y>250) {
+    console.log("Don't cheat...");
+      yv = -1;
+      y = 250;
+    }
   } else {
   ctx.fillStyle = "blue";
   canvasJS.rectangle(0,0,500,500);
