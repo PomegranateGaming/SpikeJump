@@ -50,6 +50,8 @@ ctx.fillStyle = "red";
     console.log("Don't cheat...");
       yv = -1;
       y = 250;
+      mode = 0;
+      alert("Don't cheat.");
     }
   } else {
   ctx.fillStyle = "blue";
