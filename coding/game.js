@@ -46,7 +46,7 @@ ctx.fillStyle = "red";
     }
   }
   x-=4;
-    if (y>250) {
+    if (y<250) {
     console.log("Don't cheat...");
       yv = -1;
       y = 250;
