@@ -29,7 +29,7 @@ ctx.fillStyle = "red";
     yv=0;} else {lol=false;yv=-20;y-=20;go=0;}
     
   }
-                  if (lol) {if (y===400) {go = 1;
+                  if (lol) {lol=false; if (y===400) {go = 1;
                          a = 1; }}
   for (var i=x-600; i<x+600; i+=300) {
   ctx.fillStyle = "gray";
