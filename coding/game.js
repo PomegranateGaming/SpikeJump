@@ -64,7 +64,7 @@ ctx.fillStyle = "red";
     ctx.fillStyle = "darkblue";
     canvasJS.rectangle(50,350,400,100);
     ctx.fillStyle = "orange";
-    canvasJS.text.fill("50px Comic Sans MS","PLAY",250,400);
+    canvasJS.text.fill("50px Comic Sans MS","PLAY",250,425);
   }
 }
 var touch = 0;
