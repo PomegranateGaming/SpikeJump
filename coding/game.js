@@ -63,6 +63,7 @@ ctx.fillStyle = "red";
     canvasJS.text.fill("20px Comic Sans MS","Click/Drag(mobile)/Press a button to play.",250,300);
     ctx.fillStyle = "darkblue";
     canvasJS.rectangle(50,350,400,100);
+    canvasJS.text.fill("50px Comic Sans MS","PLAY",250,450);
   }
 }
 var touch = 0;
