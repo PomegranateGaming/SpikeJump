@@ -5,6 +5,8 @@ canvasJS.rectangle(0,0,500,500);
   canvasJS.rectangle(0,450,500,50);
 }
 var y = 250;
+var score = 0;
+var play = 0;
 var lol = false;
 var mode = 0;
 var x = 0;
@@ -13,6 +15,7 @@ var a = 0;
 var go = 0;
 function char() {
   if (mode===1) {
+    score++;
   if (x===0) {
    x=600; 
   }
@@ -44,6 +47,7 @@ ctx.fillStyle = "red";
         
       }
     }
+     canvasJS.text.fill("20px Comic Sans MS",score,250,50);
   }
   x-=4;
     if (y<150) {
@@ -65,6 +69,9 @@ ctx.fillStyle = "red";
     canvasJS.rectangle(50,350,400,100);
     ctx.fillStyle = "orange";
     canvasJS.text.fill("50px Comic Sans MS","PLAY",250,425);
+    if (play !== 0) {
+    canvasJS.text.fill("20px Comic Sans MS",score,250,50);
+    }
   }
 }
 var touch = 0;
@@ -99,6 +106,7 @@ x = 0;
 yv = 0;
 a = 0;
 go = 0;
+       score = 0;
         }
    }
         });
@@ -111,6 +119,7 @@ x = 0;
 yv = 0;
 a = 0;
 go = 0;
+       score = 0;
         }
    }
         });
